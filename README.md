@@ -62,7 +62,7 @@ Place the following files in your htdocs/motor-task folder inside the XAMPP dire
 ## 4️⃣ Run the Web App
 
 Visit the following URL in your browser:
-localhost/HexaMotion/
+http://localhost/HexaMotion/
 
 
 
