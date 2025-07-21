@@ -45,7 +45,7 @@ HexaMotion enables real-time control of six servo motors with the following feat
 | motor5  | INT  | –                            |
 | motor6  | INT  | –                            |
 
-## 3️⃣ Project Files
+## 3️⃣ task Files
 
 Place the following files in your htdocs/motor-task folder inside the XAMPP directory:
 
@@ -64,18 +64,6 @@ Place the following files in your htdocs/motor-task folder inside the XAMPP dire
 Visit the following URL in your browser:
 localhost/HexaMotion/
 
-# 📂 task Files
-
-| File                  | Description                              |
-|-----------------------|----------------------------------------|
-| db.php              | Handles database connection             |
-| delete_motor_data.php | Deletes a saved motor configuration    |
-| get_motor_data.php   | Fetches all saved motor data            |
-| run_pose.php         | Runs the current motor positions        |
-| update_motor_data.php | Saves or updates motor positions in DB |
-| index.html          | Main control panel interface             |
-| script.js           | JavaScript logic for interaction         |
-| style.css           | Page styling and design                  |
 
 
 # ⚙️How to Use
