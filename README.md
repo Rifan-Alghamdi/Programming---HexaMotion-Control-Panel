@@ -2,6 +2,7 @@
 HexaMotion is a web-based control panel designed to manipulate a robotic arm with six degrees of freedom (6 DOF). The interface allows users to adjust servo motor angles using intuitive sliders, then perform key actions like saving a pose, resetting values, or running the robotic movement. Each saved pose is stored in a MySQL database and displayed in a dynamic table, where users can easily load or delete individual entries. This project combines HTML, CSS, JavaScript, PHP, and MySQL to provide real-time interaction and data management, making it an ideal tool for robotic motion testing and automation tasks..
 
 # 🖼️ Preview
+### 🧾 Web Form Interface (localhost)
 
 ![HexaMotion Interface](hexamotion-interface.jpg)
 # 📌 Project Overview
