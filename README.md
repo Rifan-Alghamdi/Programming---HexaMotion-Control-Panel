@@ -67,13 +67,11 @@ http://localhost/HexaMotion/
 
 
 
-# ⚙️How to Use
- 1. Open the project in a local PHP environment (like XAMPP).
- 2. Use the sliders to set each motor’s angle.
- 3. Click:
- • Run: to execute the current pose.
- • Save: to store the pose in the database.
- • Reset: to reset all values to 0.
- 4. At the bottom of the interface, a table displays all saved poses with:
- • A Load button to apply a saved pose.
- • A Delete button to remove a pose.
+# 📋 Output Behavior
+
+- 🎛 Sliders initialized at 90° for each motor  
+- 🔘 Buttons: Run Pose, Save Pose, Reset  
+- 💾 Saved poses shown in a table with Load/Delete options  
+- 📦 Data saved to MySQL on Save  
+- 🖥 Output like s090s120s085... shown after clicking Run  
+- 🔄 Slider values update live with user input
