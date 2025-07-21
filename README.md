@@ -3,7 +3,7 @@ HexaMotion is a web-based control panel designed to manipulate a robotic arm wit
 
 # 🖼️ Preview
 
-![HexaMotion Interface](hexamotion-interface.png)
+![HexaMotion Interface](hexamotion-interface.jpg)
 # 📌 Project Overview
 
 HexaMotion enables real-time control of six servo motors with the following features:
