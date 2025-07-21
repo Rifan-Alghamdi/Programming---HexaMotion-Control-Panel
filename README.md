@@ -13,7 +13,58 @@ HexaMotion enables real-time control of six servo motors with the following feat
 - View a table of saved motor configurations.
 - Load or delete individual configurations from the table.
 
-# 📂 File Structure
+
+# ⚙️ Technologies Used
+
+- 💻 PHP (backend logic)  
+- 🗃 MySQL (database)  
+- 🎨 HTML, CSS & JavaScript (frontend, design, and UI interaction)  
+- 🧪 XAMPP (Apache server + MySQL service)  
+- 🌐 Localhost (browser-based testing)
+-  🗃️ Database Structure
+
+# 🚀 Setup Instructions
+
+## 1️⃣ Install & Run XAMPP
+- Download and install XAMPP.
+- Open the XAMPP Control Panel.
+- Start both Apache and MySQL services.
+
+## 2️⃣ Create the Database
+- Go to [localhost/phpmyadmin](http://localhost/phpmyadmin)
+- Create a new database called: motor_data
+- Inside it, create a table named: motor_values with the following columns:
+
+| Column  | Type | Extra                        |
+|---------|------|------------------------------|
+| id      | INT  | PRIMARY KEY, AUTO_INCREMENT  |
+| motor1  | INT  | –                            |
+| motor2  | INT  | –                            |
+| motor3  | INT  | –                            |
+| motor4  | INT  | –                            |
+| motor5  | INT  | –                            |
+| motor6  | INT  | –                            |
+
+## 3️⃣ Project Files
+
+Place the following files in your htdocs/motor-task folder inside the XAMPP directory:
+
+| File                    | Description                                      |
+|-------------------------|--------------------------------------------------|
+| index.html            | Main interface with sliders and output box      |
+| style.css             | Styling for layout and table                    |
+| script.js             | Handles slider values, saving, loading, output  |
+| update_motor_data.php | Saves motor values to the database               |
+| get_motor_data.php    | Retrieves all saved motor values                 |
+| delete_motor_data.php | Deletes a specific saved row                     |
+| run_pose.php          | Outputs saved values in format sXXX            |
+
+## 4️⃣ Run the Web App
+
+Visit the following URL in your browser:
+localhost/HexaMotion/
+
+# 📂 task Files
 
 | File                  | Description                              |
 |-----------------------|----------------------------------------|
@@ -26,23 +77,8 @@ HexaMotion enables real-time control of six servo motors with the following feat
 | script.js           | JavaScript logic for interaction         |
 | style.css           | Page styling and design                  |
 
-# ⚙️ Technologies Used
 
-- 💻 PHP (backend logic)  
-- 🗃 MySQL (database)  
-- 🎨 HTML, CSS & JavaScript (frontend, design, and UI interaction)  
-- 🧪 XAMPP (Apache server + MySQL service)  
-- 🌐 Localhost (browser-based testing)
-#  🗃️ Database Structure
-
-- Database Name: prog_task3  
-- Table Name: motor_data  
-- Fields:
-  - id (INT, AUTO_INCREMENT, PRIMARY KEY)
-  - s1 to s6 (INT): Motor position values
-  - created_at (TIMESTAMP): Timestamp of saving
-
-## ⚙️How to Use
+# ⚙️How to Use
  1. Open the project in a local PHP environment (like XAMPP).
  2. Use the sliders to set each motor’s angle.
  3. Click:
