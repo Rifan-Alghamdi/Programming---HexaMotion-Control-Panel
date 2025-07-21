@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motor Controller</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1> HexaMotion Controller </h1>
+
+  <div class="sliders">
+    <div class="motor">
+      <label for="m1">Motor 1</label>
+      <input type="range" id="m1" min="0" max="180" value="90" oninput="updateValue(1)">
+      <span id="v1">90</span>
+    </div>
+    <div class="motor">
+      <label for="m2">Motor 2</label>
+      <input type="range" id="m2" min="0" max="180" value="90" oninput="updateValue(2)">
+      <span id="v2">90</span>
+    </div>
+    <div class="motor">
+      <label for="m3">Motor 3</label>
+      <input type="range" id="m3" min="0" max="180" value="90" oninput="updateValue(3)">
+      <span id="v3">90</span>
+    </div>
+    <div class="motor">
+      <label for="m4">Motor 4</label>
+      <input type="range" id="m4" min="0" max="180" value="90" oninput="updateValue(4)">
+      <span id="v4">90</span>
+    </div>
+    <div class="motor">
+      <label for="m5">Motor 5</label>
+      <input type="range" id="m5" min="0" max="180" value="90" oninput="updateValue(5)">
+      <span id="v5">90</span>
+    </div>
+    <div class="motor">
+      <label for="m6">Motor 6</label>
+      <input type="range" id="m6" min="0" max="180" value="90" oninput="updateValue(6)">
+      <span id="v6">90</span>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="resetSliders()">Reset</button>
+    <button onclick="saveData()">Save</button>
+    <button onclick="runPose()">Run</button>
+  </div>
+
+  <div id="output" class="result-box">s----</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>M1</th>
+        <th>M2</th>
+        <th>M3</th>
+        <th>M4</th>
+        <th>M5</th>
+        <th>M6</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

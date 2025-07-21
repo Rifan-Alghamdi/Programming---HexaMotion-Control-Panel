@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background: #f0f4fa;
+  color: #1f2a44;
+  margin: 0;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #0d1a40;
+}
+
+.sliders {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.motor {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(5, 31, 91, 0.1);
+  padding: 20px 25px;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease;
+}
+
+.motor:hover {
+  transform: translateY(-5px);
+}
+
+.motor label {
+  font-weight: 600;
+  color: #0d1a40;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #3b82f6;
+  cursor: pointer;
+  height: 6px;
+  border-radius: 4px;
+}
+
+.motor span {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.result-box {
+  background-color: #e0edff;
+  border: 2px dashed #2563eb;
+  padding: 20px;
+  margin: 25px auto;
+  width: fit-content;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0d1a40;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+}
+
+.buttons {
+  margin-bottom: 40px;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+table {
+  width: 96%;
+  margin: 0 auto 40px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 15px rgba(31, 42, 68, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+  font-size: 1rem;
+}
+
+th, td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+  color: #1f2a44;
+}
+
+th {
+  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+td button {
+  background-color: #60a5fa;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+td button:hover {
+  background-color: #6b87c3;
+}
