@@ -15,15 +15,17 @@ HexaMotion enables real-time control of six servo motors with the following feat
 
 # 📂 File Structure
 
-HexaMotion/
-├── db.php                  # Handles database connection  
-├── delete_motor_data.php   # Deletes a saved configuration  
-├── get_motor_data.php      # Fetches all saved motor data  
-├── run_pose.php            # Executes the current motor positions  
-├── update_motor_data.php   # Saves current positions to the database  
-├── index.html              # Main control panel interface  
-├── script.js               # JavaScript logic for interaction  
-└── style.css               # Page styling and design  
+| File                  | Description                              |
+|-----------------------|----------------------------------------|
+| db.php              | Handles database connection             |
+| delete_motor_data.php | Deletes a saved motor configuration    |
+| get_motor_data.php   | Fetches all saved motor data            |
+| run_pose.php         | Runs the current motor positions        |
+| update_motor_data.php | Saves or updates motor positions in DB |
+| index.html          | Main control panel interface             |
+| script.js           | JavaScript logic for interaction         |
+| style.css           | Page styling and design                  |
+
 
 #  🗃️ Database Structure
 
