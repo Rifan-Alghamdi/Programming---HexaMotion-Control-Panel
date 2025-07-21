@@ -26,7 +26,13 @@ HexaMotion enables real-time control of six servo motors with the following feat
 | script.js           | JavaScript logic for interaction         |
 | style.css           | Page styling and design                  |
 
+# ⚙️ Technologies Used
 
+- 💻 PHP (backend logic)  
+- 🗃 MySQL (database)  
+- 🎨 HTML, CSS & JavaScript (frontend, design, and UI interaction)  
+- 🧪 XAMPP (Apache server + MySQL service)  
+- 🌐 Localhost (browser-based testing)
 #  🗃️ Database Structure
 
 - Database Name: prog_task3  
